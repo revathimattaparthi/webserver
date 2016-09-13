@@ -24,7 +24,7 @@ app.use(middleware.logger);
 //about
 app.get('/about', middleware.requireAuthentication, function(req,res){
 
-	res.send('It is About page');
+	res.send('It is About page !!!!!');
 });
 
 
@@ -32,6 +32,7 @@ app.get('/about', middleware.requireAuthentication, function(req,res){
 app.use(express.static(__dirname + '/html'));
 
 app.listen(PORT, function(){
+
 	console.log(' server started ' + PORT + '!');
 });
 
