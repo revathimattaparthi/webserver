@@ -12,7 +12,7 @@ app.use(middleware.logger);
 //about
 app.get('/about', middleware.requireAuthentication, function(req,res){
 
-	res.send('It is Aboutttttttt pageeeeeeeeee !!!!!');
+	res.send('It is Aboutttttt pageeeeeeeeee !!!!!');
 });
 
 
