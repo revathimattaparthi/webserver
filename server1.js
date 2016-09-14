@@ -16,7 +16,10 @@ app.get('/about', middleware.requireAuthentication, function(req,res){
 });
 
 
+app.get('/aboutus', middleware.requireAuthentication, function(req, res){
+	res.send('It is Aboutttttttt us pageeeeeeeeee !!!!!');
 
+});
 app.use(express.static(__dirname + '/html'));
 
 app.listen(PORT, function(){
